@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>First JavaScript</title>
+  <meta charset="UTF-8">
+  <meta name="description" content="Free Web tutorials">
+  <meta name="keywords" content="your, relevant, keywords, in, a, comma, separated, list">
+  <meta name="author" content="Your Name">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="">
+
+  <style>
+    button {
+      display: block;
+      margin-top: 20px;
+    }
+    #date_display{
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>JavaScript Example</h1>
+  <button type="button" id="myButton" onclick="alert('Hi There!')">Press Me</button>
+  <button type="button" id="button2" onclick="dateF()">Press Me</button>
+  <div id="date_display">
+  </div>
+
+  <script>
+    function dateF() {
+      document.getElementById("date_display").innerHTML = Date();
+      document.getElementById("date_display").style='display:block';
+    }
+  </script>
+</body>
+
+</html>
