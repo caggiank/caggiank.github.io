@@ -1,0 +1,66 @@
+<html>
+
+<head>
+  <title>Your Page Title</title>
+  <meta charset="UTF-8">
+  <meta name="description" content="Free Web tutorials">
+  <meta name="keywords" content="your, relevant, keywords, in, a, comma, separated, list">
+  <meta name="author" content="Your Name">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="">
+
+  <style>
+  .slide {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+  }
+  .slideshow{
+    margin: 100px;
+    height: 500px;
+    width: 1000px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
+
+  </style>
+</head>
+
+<body>
+  <div class="slides">
+    <img class="slideshow" name="slide">
+  </div>
+  <script>
+    var i = 0;
+    var images = [];
+    var time = 3000;
+
+    images[0] = "https://cdn.vox-cdn.com/thumbor/I7N5gi_TOiEoAdNU0jDHzKzpByw=/0x0:3900x2610/1200x800/filters:focal(1468x393:2092x1017)/cdn.vox-cdn.com/uploads/chorus_image/image/69930212/1235498270.0.jpg"
+    images[1] = "https://bostonglobe-prod.cdn.arcpublishing.com/resizer/mYxjTPmyiHM-RUZNN0Kx2xdBeWM=/1440x0/cloudfront-us-east-1.images.arcpublishing.com/bostonglobe/2FZW5ZDUTRDIYRY56WFADARD74.jpg"
+    images[2] = "https://s3media.247sports.com/Uploads/Assets/581/735/10735581.jpg?fit=bounds&crop=1200:630,offset-y0.50&width=1200&height=630"
+    images[3] = "https://bloximages.newyork1.vip.townnews.com/stltoday.com/content/tncms/assets/v3/editorial/9/f0/9f0abc3a-3e10-56f6-9b08-37769fbf0113/601351a8a8b3d.image.jpg?resize=1200%2C799"
+    images[4] = "https://media.gettyimages.com/photos/boston-college-punter-garrett-reilly-during-a-game-between-the-boston-picture-id1031554804"
+
+    function changeImg() {
+      document.slide.src = images[i];
+
+      if (i < images.length - 1) {
+        i++;
+      } else {
+        i = 0;
+      }
+
+      setTimeout("changeImg()", time);
+    }
+
+    window.onload = changeImg;
+  </script>
+</body>
+
+</html>
