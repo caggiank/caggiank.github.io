@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <title>Submit Your Documents</title>
@@ -11,8 +11,6 @@
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="page2.css">
-
-  <head>
     <style>
 
     </style>
@@ -29,9 +27,9 @@
     <h2>Submit Your Documents Here</h2>
   </header>
   <form action="https://idesstage2.bc.edu/class/results.php" method="post">
-    <label for="fname">Name:</label><br>
+    <label for="name">Name:</label><br>
     <input type="text" id="name" name="name"><br>
-    <label for="lname">Email:</label><br>
+    <label for="email">Email:</label><br>
     <input type="text" id="email" name="email" required><br>
     <fieldset>
       <legend>School Information</legend><br>
@@ -39,15 +37,15 @@
       <input type="text" id="school" name="school" required><br>
       <label for="year">Current Year:</label> <br> <br>
       <label for="freshman">Freshman</label>
-      <input type="radio" name="year" value="Freshman"><br>
+      <input type="radio" id="freshman" name="year" value="Freshman"><br>
       <label for="sophomore">Sophomore</label>
-      <input type="radio" name="year" value="Sophomore"><br>
+      <input type="radio" id="sophomore" name="year" value="Sophomore"><br>
       <label for="junior">Junior</label>
-      <input type="radio" name="year" value="Junior"><br>
+      <input type="radio" id="junior" name="year" value="Junior"><br>
       <label for="senior">Senior</label>
-      <input type="radio" name="year" value="Senior"><br>
+      <input type="radio" id="senior" name="year" value="Senior"><br>
       <label for="Other">Other</label>
-      <input type="radio" name="type" value="Other"><br>
+      <input type="radio" id="other" name="type" value="Other"><br>
     </fieldset>
     <br>
     <fieldset>
@@ -62,17 +60,17 @@
       </select>
       <br> <br>
       <label for="length">Length:</label><br>
-      <input type="length" name="length"><br>
+      <input type="text" id="length" name="length"><br>
       <label for="subject">Subject:</label><br>
-      <input type="text" name="subject"><br>
-      <label for="subject">Please provide a brief summary of your document:</label><br>
-      <textarea name="message" style="width:60ch; rows:3;"></textarea><br>
+      <input type="text" id="subject" name="subject"><br>
+      <label for="message">Please provide a brief summary of your document:</label><br>
+      <textarea id="message" name="message" style="width:60ch; rows:3;"></textarea><br>
     </fieldset>
     <br>
     <label for="doccontents">Please copy and paste the text content of your document:</label><br>
-    <textarea name="message" style="width:150ch;height:20ch; rows:3;"></textarea><br>
+    <textarea id="doccontents" name="message" style="width:150ch;height:20ch; rows:3;"></textarea><br>
     <br>
-    <label for="file">Please upload your document in a PDF format:</label><br> <br>
+    <label for="myFile">Please upload your document in a PDF format:</label><br> <br>
     <input type="file" id="myFile" name="filename">
     <br>
     <input type="submit" value="Submit"><br>
