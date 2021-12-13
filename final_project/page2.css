@@ -1,0 +1,77 @@
+body {
+  font-size: 1.3em;
+  background-color: #F5F5F5;
+}
+
+content {
+  width: 90%;
+  margin: auto;
+}
+
+h1 {
+  text-align: center;
+}
+
+form {
+  margin: 5%;
+}
+
+input {
+  margin-bottom: 2%;
+}
+
+input#submit {
+  display: block;
+  background-color: #33ff99;
+  font-weight: bold;
+  padding: 20px;
+  font-size: 1.5em;
+}
+
+select option {
+  font-size: 1.75em;
+  width: 150px;
+}
+
+textarea {
+  overflow-y: scroll;
+}
+
+.icon-bar {
+  width: 100%;
+  background-color: #555;
+  overflow: auto;
+}
+
+.icon-bar a {
+  float: left;
+  text-align: center;
+  width: 20%;
+  padding: 12px 0;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 36px;
+}
+
+.icon-bar a:hover {
+  background-color: #000;
+
+}
+
+.active {
+  background-color: #04AA6D;
+}
+
+header {
+  text-align: center;
+  font-size: 30px;
+}
+
+footer {
+  margin: 10px;
+  width: 100%;
+  background-color: #F5F5F5;
+  text-align: center;
+  color: black;
+  font-size: 20px;
+}

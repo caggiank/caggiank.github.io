@@ -1,0 +1,101 @@
+<html>
+
+<head>
+  <title>Student Publishing</title>
+  <meta charset="utf-8">
+  <meta name="description" content="A new way for college students to publish">
+  <meta name="keywords" content="student,publishing,collge,papers,academia,univeristy,publish,finals,thesis,disertation,research,student publishing">
+  <meta name="author" content="Kevin Caggiano">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="finalproject.css">
+<style>
+
+</style>
+
+
+</head>
+
+<body>
+  <header>
+    <img id="logo" src="a6bcc0acb4734a0590572ab61c22b365-2.png">
+    <h2>Student Publishing.org</h2>
+    <div class="navbar">
+      <div class="dropdown">
+        <button class="dropbtn">More
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="page1.html">Gallery</a>
+          <a href="page2.html">Submit Documents</a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <br>
+  <br>
+  <br>
+  <div class="column side">
+    <aside class="left">
+      <p>
+        <br> <br> <br> <br> <br>
+        "Student Publishing.org was the perfect place to show off the countless amount of scholarship that I have done throughout college, without going through the crazy amount of steps to officially publish a paper." <br> <br> -Student from Boston College
+          <br> <br> <br> <br> <br>
+      </p>
+  </div>
+  <div class="column middle">
+    <section class="first">
+      <img id="slideshow" name="slide" />
+    </section>
+  </div>
+  <div class="column side">
+    </aside>
+    <aside class="right">
+      <p>
+        <br> <br> <br> <br> <br>
+        "I was really struggling to find the necessary research for my senior thesis. I looked through some of the papers posted on Student Publishing.org and found the perfect sources for my argument." <br> <br> -Student from Harvard
+        <br> <br> <br> <br> <br>
+      </p>
+    </aside>
+  </div>
+  <div>
+    <article>
+      <h1>About</h1>
+      <p style="font-size: 20px;">
+        Student Publishing.org is a place where students can upload substantial pieces of work
+        that they either created independently or had to create for a class. From final projects, reasearch papers, theses, to passion projects -
+        Student Publishing.org is a platform where ideas, knowledge, and research can be shared free of charge and with ease.
+        Unlike traditional academic publishing, there are no complex bariers to jump through. At the simple press of a button, college students are transformed into academics.
+      </p>
+    </article>
+    <footer>
+      <p>Kevin Caggiano-Email-caggiank@bc.edu-Phone-585-441-5896</p>
+    </footer>
+  </div>
+
+  <script>
+    var i = 0;
+    var images = [];
+    var time = 4000;
+
+    images[0] = "https://www.incimages.com/uploaded_files/image/1920x1080/getty_1035462384_395932.jpg";
+    images[1] = "https://www.up.ac.za/media/shared/117/Images/publishing-image-02.zp198853.jpg";
+    images[2] = "https://lofficiel.imgix.net/production/austria/images/1623680067938615-dark-academia-1.jpg?w=1920&h=800&fit=clip&crop=faces&auto=%5B%22format%22%2C%20%22compress%22%5D&cs=srgb";
+
+    function changeImg() {
+      document.slide.src = images[i];
+
+      if (i < images.length - 1) {
+        i++;
+      } else {
+        i = 0;
+      }
+
+      setTimeout("changeImg()", time);
+    }
+
+    window.onload = changeImg;
+  </script>
+</body>
+
+</html>

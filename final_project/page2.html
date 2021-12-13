@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Your Page Title</title>
+  <meta charset="UTF-8">
+  <meta name="description" content="Free Web tutorials">
+  <meta name="keywords" content="your, relevant, keywords, in, a, comma, separated, list">
+  <meta name="author" content="Your Name">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="page2.css">
+
+  <head>
+    <style>
+
+    </style>
+  </head>
+
+<body>
+  <section>
+    <div class="icon-bar">
+      <a class="active" href="test.html"><i class="fa fa-home"></i></a>
+      <a href="page1.html"><i class="fa fa-folder-open"></i></a>
+    </div>
+  </section>
+  <header>
+    <h2>Submit Your Documents Here</h2>
+  </header>
+  <form action="https://idesstage2.bc.edu/class/results.php" method="post">
+    <label for="fname">Name:</label><br>
+    <input type="text" id="name" name="name"><br>
+    <label for="lname">Email:</label><br>
+    <input type="text" id="email" name="email" required><br>
+    <fieldset>
+      <legend>School Information</legend><br>
+      <label for="school">School Name:</label><br>
+      <input type="text" id="school" name="school" required><br>
+      <label for="year">Current Year:</label> <br> <br>
+      <label for="freshman">Freshman</label>
+      <input type="radio" name="year" value="Freshman"><br>
+      <label for="sophomore">Sophomore</label>
+      <input type="radio" name="year" value="Sophomore"><br>
+      <label for="junior">Junior</label>
+      <input type="radio" name="year" value="Junior"><br>
+      <label for="senior">Senior</label>
+      <input type="radio" name="year" value="Senior"><br>
+      <label for="Other">Other</label>
+      <input type="radio" name="type" value="Other"><br>
+    </fieldset>
+    <br>
+    <fieldset>
+      <legend>Document Information</legend>
+      <p> Please select the source of your document:</p>
+      <select id="reason" name="reason">
+        <option value="class">For a class</option>
+        <option value="research">Research</option>
+        <option value="personal">Personal</option>
+        <option value="extracurricular">Extracurricular</option>
+        <option value="other">Other</option>
+      </select>
+      <br> <br>
+      <label for="length">Length:</label><br>
+      <input type="length" name="length"><br>
+      <label for="subject">Subject:</label><br>
+      <input type="text" name="subject"><br>
+      <label for="subject">Please provide a brief summary of your document:</label><br>
+      <textarea name="message" style="width:60ch; rows:3;"></textarea><br>
+    </fieldset>
+    <br>
+    <label for="doccontents">Please copy and paste the text content of your document:</label><br>
+    <textarea name="message" style="width:150ch;height:20ch; rows:3;"></textarea><br>
+    <br>
+    <label for="file">Please upload your document in a PDF format:</label><br> <br>
+    <input type="file" id="myFile" name="filename">
+    <br>
+    <input type="submit" value="Submit"><br>
+  </form>
+  <footer>
+    <p>Kevin Caggiano-Email-caggiank@bc.edu-Phone-585-441-5896</p>
+  </footer>
+</body>
+
+</html>
